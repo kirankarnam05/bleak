@@ -1,0 +1,171 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+  body {
+   font-family: 'Roboto', sans-serif;
+   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+ /*navbar*/
+  nav {
+   margin: 0;
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0%;
+   right: 0%;
+   background-color: #334443;
+   float: right;
+   padding: 0px;
+   height: 65px;
+  }
+
+  a {
+   float: right;
+   padding: 23px;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 5000;
+   color: white;
+  }
+
+  a:hover {
+   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+   color: black;
+   font-size: 22 px;
+  }
+
+  .h {
+   background-color: white;
+  }
+
+  /*navbar*/
+
+  /*Hidingi scroll bar*/
+  ::-webkit-scrollbar {
+   width: 0;
+  }
+
+  /*Hiding scroll bar*/
+
+  /*Main image*/
+  .img1 {
+   position: absolute;
+   top: 100px;
+   left: 127.5px;
+  }
+
+  .img1 img {
+   border: 1px solid black;
+   border-radius: 40px;
+   width: 1300px;
+   height: 570px;
+  }
+
+  .Gallery {
+   position: absolute;
+   top: 120%;
+   left: 90px;
+   display: flexbox;
+   padding: 50px;
+  }
+
+  .Gallery img {
+   height: 250px;
+   width: 250px;
+   border-radius: 25px;
+  }
+
+  * {
+   padding: 0;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /*apply css properties to body*/
+
+  body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+
+  /*apply css properties to container class*/
+
+  .container {
+   position: relative;
+   width: 1000px;
+   height: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 40px;
+   padding-right: 20px;
+  }
+
+  /*apply css properties to card class*/
+
+  .container .card {
+   height: 220px;
+   max-width: 200px;
+   position: relative;
+   margin: 30px 10px;
+   padding: 20px 15px;
+   background: black;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0 5px 202px black;
+   transition: 0.3s ease-in-out;
+  }
+
+  /*apply css properties to card class when it get pointed by cursor*/
+
+  .container .card:hover {
+   height: 420px;
+  }
+
+  /*apply css properties to imgbox class*/
+
+  .containe .card .imgbox {
+   position: relative;
+   width: 260px;
+   height: 260px;
+   top: -60px;
+   left: 20px;
+  }
+
+  /*apply css properties to img tag*/
+
+  .container .card .imgbox img {
+   max-width: 100%;
+   border-radius: 4px;
+   height: 200px;
+  }
+
+  /*apply css properties to content class*/
+
+  .container .card .content {
+   position: relative;
+   margin-top: -100px;
+   padding: 10px 15px;
+   text-align: center;
+   color: white;
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.3s ease-in-out;
+  }
+
+  p {
+   color: white;
+   font-weight: 400t;
+  }
+
+  /*apply css properties to content when card gets hovered*/
+
+  .container .card:hover .content {
+   visibility: visible;
+   opacity: 1;
+   margin-top: -10px;
+   transition-delay: 0.3s;
+  }

@@ -1,0 +1,176 @@
+@import 'navbar.css';
+@import 'aboutus.css';
+@import 'blogs.css';
+@import 'footer.css';
+@import 'blogpost.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+/*navbar*/
+nav {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  background-color: #334443;
+  float: right;
+  padding: 0px;
+  height: 65px;
+}
+a {
+  float: right;
+  padding: 23px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 5000;
+  color: white;
+}
+a:hover {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  color: black;
+  font-size: 22 px;
+}
+.h {
+  background-color: white;
+}
+/*navbar*/
+
+/*Hidingi scroll bar*/
+::-webkit-scrollbar {
+  width: 0;
+}
+/*Hiding scroll bar*/
+
+/*Main image*/
+.img1 {
+  position: absolute;
+  top: 100px;
+  left: 127.5px;
+}
+.img1 img {
+  border: 1px solid black;
+  border-radius: 40px;
+  width: 1300px;
+  height: 570px;
+}
+
+.Gallery {
+  position: absolute;
+  top: 120%;
+  left: 90px;
+  display: flexbox;
+  padding: 50px;
+}
+.Gallery img {
+  height: 250px;
+  width: 250px;
+  border-radius: 25px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.cover {
+  width: 100%;
+  max-height: 75vh;
+}
+
+.destinations-container {
+  margin: 5vh 20vw 0 20vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.destinations {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+}
+
+.caption {
+  text-align: center;
+  margin: 2vh 4vw 2vh 4vw;
+  font-size: 1.25rem;
+  display: flex;
+  flex-flow: column;
+  font-style: italic;
+}
+
+/*Extra small devices*/
+@media screen and (min-width: 200px) and (max-width: 499px) {
+  .destinations-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/*Small devices and Tablets*/
+@media screen and (min-width: 500px) and (max-width: 767.98px) {
+  .destinations-container {
+    margin: 5vh 10vw 0 10vw;
+  }
+}
+a {
+  cursor: pointer;
+}
+
+.blog-grid-container {
+  position: absolute;
+  top: 130px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  margin: 5vh 12vw;
+}
+
+.blog-post {
+  min-height: 50vh;
+  text-align: center;
+  background: white;
+}
+
+.blog-cover-img {
+  width: 100%;
+}
+
+.blog-content {
+  padding: 1rem;
+  text-align: justify;
+}
+
+.blog-content-description {
+  margin: 2vh 0 0 0;
+}
+
+@media screen and (max-width: 668px) {
+  .blog-grid-container {
+    grid-template-columns: auto auto;
+    margin: 5vh 15vw;
+  }
+
+  .blog-post {
+    grid-column: 1 / span 2;
+  }
+}
+.custom-container {
+  margin: 5vh 15vw !important;
+  text-align: center;
+}
+
+.blog-page-cover {
+  max-width: 70vw;
+}
+
+.blog-content {
+  text-align: justify;
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+/*navbar*/
+nav {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  background-color: #334443;
+  float: right;
+  padding: 0px;
+  height: 65px;
+}
+a {
+  float: right;
+  padding: 23px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 5000;
+  color: white;
+}
+a:hover {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  color: black;
+  font-size: 22 px;
+}
+.h {
+  background-color: white;
+}
+/*navbar*/
+
+/*Hidingi scroll bar*/
+::-webkit-scrollbar {
+  width: 0;
+}
+/*Hiding scroll bar*/
+
+/*Main image*/
+.img1 {
+  position: absolute;
+  top: 100px;
+  left: 127.5px;
+}
+.img1 img {
+  border: 1px solid black;
+  border-radius: 40px;
+  width: 1300px;
+  height: 570px;
+}
+p {
+  left: 100px;
+  right: 100px;
+  position: absolute;
+  top: 100%;
+  color: black;
+  font-weight: 5000px;
+}
+.Gallery {
+  position: absolute;
+  top: 120%;
+  left: 90px;
+  display: flexbox;
+  padding: 50px;
+}
+.Gallery img {
+  height: 250px;
+  width: 250px;
+  border-radius: 25px;
+}
